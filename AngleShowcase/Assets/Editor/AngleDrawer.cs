@@ -28,7 +28,7 @@ namespace KonLab.KL_Editor
 	        if (circle == null)
 	            circle = InitializeTexture();
 
-	        float value = EditorGUI.FloatField(new Rect(position.x, position.y, position.width, textHeight), "Angle", property.floatValue);
+	        float value = EditorGUI.FloatField(new Rect(position.x, position.y, position.width, textHeight), property.name, property.floatValue);
 	        property.floatValue = value;
 
 	        position.y += 16;
